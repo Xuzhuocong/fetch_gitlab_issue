@@ -39,7 +39,7 @@ for project in projects:
     print("\t%d\t\t%s" % (project['id'], project['name']))
 projectId = input("请输入：\n")
 
-fetchIssuesUrl = "%s/api/v3/projects/%s/issues?private_token=%s" % (host, projectId, privateToken)
+fetchIssuesUrl = "%s/api/v3/projects/%s/issues?scope=all&private_token=%s" % (host, projectId, privateToken)
 issues = json.loads(requests.get(fetchIssuesUrl).text)
 print(json.dumps(issues, indent=2, sort_keys=True))
 
