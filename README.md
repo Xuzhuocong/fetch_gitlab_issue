@@ -1,0 +1,2 @@
+# fetch_gitlab_issue
+由于GitLab没有导出issue的功能，因此写个小工具用于拉取GitLab中的issue列表
