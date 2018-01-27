@@ -1,4 +1,5 @@
-# fetch_gitlab_issue
+**更新:** 突然发现gitlab的api在命令行里配合curl真的很好用，这个脚本要凉了。。。。。。
+# ~~fetch_gitlab_issue~~
 由于GitLab没有导出issue的功能，因此写个小工具用于拉取GitLab中的issue列表。
 当前脚本基于Gitlab v3版本的api[GitLab API - GitLab Documentation](https://docs.gitlab.com/ce/api/)
 ，把issue列表导出到json文件中，而json文件可以很方便的转换成其他的文件格式，如xml、csv、excel等等。
